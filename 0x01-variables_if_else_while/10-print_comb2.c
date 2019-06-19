@@ -18,7 +18,7 @@ for (ch = '0'; ch <= '9'; ch++)
 		{
 		}
 		else
-		{ 
+		{
 			putchar(',');
 			putchar(' ');
 		}
