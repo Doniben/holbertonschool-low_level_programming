@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _abs - check the code for Holberton School students.
- *
+ * @n: variable
  * Return: Always 0.
  */
 
