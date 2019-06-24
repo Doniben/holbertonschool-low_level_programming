@@ -2,7 +2,6 @@
 /**
  * _isalpha - check the code for Holberton School students.
  * @c: prints the character.
- * 
  * Return: Always 0.
  */
 int _isalpha(int c)
