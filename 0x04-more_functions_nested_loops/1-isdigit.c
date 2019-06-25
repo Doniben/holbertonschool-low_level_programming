@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _isupper - Uppercase checker.
+ * _isdigit - Digit checker.
  * @c: variable to be checked.
- * Return: to 1 if uppercase.
+ * Return: to 1 if digit.
  */
 
 int _isdigit(int c)
