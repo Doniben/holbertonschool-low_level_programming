@@ -13,13 +13,13 @@ int main(void)
 	{
 		if ((s % 3 == 0) && (s % 5 != 0))
 			printf("Fizz ");
-		if ((s % 3 != 0) && (s % 5 == 0))
+		if ((s % 3 != 0) && (s % 5 == 0 && s != 100))
 			printf("Buzz ");
 		if ((s % 3 == 0) && (s % 5 == 0))
 			printf("FizzBuzz ");
 		if ((s % 3 != 0) && (s % 5 != 0))
 			printf("%d ", s);
-		if (s == 100)
+		if ((s % 3 != 0) && (s % 5 == 0) && (s == 100))
 			printf("Buzz");
 	}
 	printf("\n");
