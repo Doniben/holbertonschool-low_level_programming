@@ -19,6 +19,8 @@ int main(void)
 			printf("FizzBuzz ");
 		if ((s % 3 != 0) && (s % 5 != 0))
 			printf("%d ", s);
+		if (s == 100)
+			printf("Buzz");
 	}
 	printf("\n");
 	return (0);
