@@ -19,6 +19,10 @@ int main(void)
 		{
 			suma = suma + x;
 		}
+		else
+		{
+			suma = suma + 0;
+		}
 	}
 	printf("%d\n", suma);
 	return (0);
