@@ -4,7 +4,6 @@
  * _puts - Write a string with a new line
  * @str: The string that receives
  * Return: On success 1.
- * 
  */
 void _puts(char *str)
 {
