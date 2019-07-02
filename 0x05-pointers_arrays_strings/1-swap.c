@@ -2,9 +2,8 @@
 
 /**
 * swap_int - Swap values of two integers
-*@a: Character who receives.
-*
-*@b; Character who receives.
+* @a: Character who receives.
+* @b: Character who receives with c.
 *
 * Return: On success.
 */
