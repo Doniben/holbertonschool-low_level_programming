@@ -1,26 +1,46 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * print_number - print an int numbers.
+ * @n: number tested
  * Return: Always 0.
  */
-int main(void)
+void print_number(int n)
 {
-	int numero = 900978, lenght = 0, mod, div = 10, inc = 10;
+	int i, j, digit, digits, power;
+	unsigned int temp, numchar, number;
 
-	while (numero)
+	digit = 0;
+	if (n < 0)
 	{
-		lenght++;
-		numero /= 10;
+		_putchar('-');
+		temp = -n;
 	}
-	lenght--;
-	printf("%d", lenght);
-	while (--lenght)
+	else
 	{
-		printf("%d", lenght);
-		inc *= 10;
+		temp = n;
 	}
-	printf("/n%d", numero % inc);
 
-	return (0);
+	number = temp;
+
+	while (number >= 10)
+	{
+		number = number / 10;
+		digit++;
+	}
+	digits = digit + 1;
+	power = 1;
+	i = 1;
+
+	while (i < digits)
+	{
+		power = power * 10;
+		i++;
+	}
+	j = power;
+	while (j >= 1)
+	{
+		numchar = (temp / j) % 10;
+		_putchar(numchar + '0');
+		j = j / 10;
+	}
 }
