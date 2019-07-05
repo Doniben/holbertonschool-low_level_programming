@@ -14,8 +14,8 @@ int main(void)
 		numero /= 10;
 	}
 	lenght--;
-	printf ("%d", lenght);
-	while(--lenght)
+	printf("%d", lenght);
+	while (--lenght)
 	{
 		printf("%d", lenght);
 		inc *= 10;
