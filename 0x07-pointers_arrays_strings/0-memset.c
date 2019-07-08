@@ -2,7 +2,7 @@
 
 /**
  * _memset - entry point
- * @s: array done 
+ * @s: array done
  * @b: value
  * @n: unsigned int
  * Return: to the array
