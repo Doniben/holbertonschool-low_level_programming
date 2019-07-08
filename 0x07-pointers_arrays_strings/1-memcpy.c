@@ -5,7 +5,7 @@
  * @dest: array
  * @src: value
  * @n: int
- * Return; to the array
+ * Return: to the array
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	for (d = 0 ; d < n ; d++)
 	{
-		*(dest +d) = *(src + d);
+		*(dest + d) = *(src + d);
 
 	}
 	return (dest);
