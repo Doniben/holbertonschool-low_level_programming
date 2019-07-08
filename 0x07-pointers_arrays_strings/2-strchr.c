@@ -4,9 +4,8 @@
  * *_strchr - function to locate a character.
  * @s: array
  * @c: value
- * Return to the array or to 0.
+ * Return: to the array or to 0.
  */
-
 char *_strchr(char *s, char c)
 {
 	unsigned int d;
@@ -16,6 +15,6 @@ char *_strchr(char *s, char c)
 		if (*(s + d) == c)
 			return (&s[d]);
 	}
-	return (0);
+	return ('\0');
 }
 
