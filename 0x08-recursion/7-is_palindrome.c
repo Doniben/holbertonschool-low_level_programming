@@ -24,7 +24,7 @@ int compare(int length, char *s, int i)
 {
 	if (s[i] != s[length - i])
 		return (0);
-	if (s == length)
+	if (i == length)
 		return (1);
 	return (compare(length, s, i + 1));
 }
