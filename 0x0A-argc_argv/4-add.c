@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 /**
  * main - add
  *@argc: number of arguments
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			sum = atoi(argv[x]) + 1;
+			sum += atoi(argv[x]);
 		}
 	}
 	printf("%d\n", sum);
