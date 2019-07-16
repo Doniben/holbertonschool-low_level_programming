@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 	char *perr;
 	int x = 0;
 
-	if (ac == 0 || av != 0)
+	if (ac == 0 || av != NULL)
 		return (NULL);
 
 	perr = malloc((x) * sizeof(char));
