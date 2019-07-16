@@ -1,10 +1,11 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * *create_array - Function to create an array of chars, initializing it with a specific char
- * @size: Size of chars 
+ * *create_array - Function to create an array of chars,
+ * initializing it with a specific char
+ * @size: Size of chars
  * @c: specific chars
- * Return: to the 
+ * Return: to the pointer created
  */
 
 char *create_array(unsigned int size, char c)
