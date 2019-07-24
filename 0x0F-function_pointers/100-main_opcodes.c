@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 	if (atoi(argv[1]) < 0)
-		{
-			printf("Error\n");
-			exit(2);
-		}
-		return (0);
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	return (0);
 }
