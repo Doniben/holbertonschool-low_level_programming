@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - 
+ * print_strings - function that prints strings
  * @separator: string to be printed between the strings
  * @n: number of strings passed to the function
  */
@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%p", strf);
 		if (separator != NULL && (counter + 1) != n)
 			printf("%s", separator);
-	}		
+	}
 	printf("\n");
 	va_end(arg_ptr);
 }
