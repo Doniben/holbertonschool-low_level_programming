@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdio.h>
 
 /**
  * *get_op_func - function to find the operator
@@ -23,8 +24,12 @@ int (*get_op_func(char *s))(int, int)
 	i = 0;
 
 	while (ops[i].op)
-		if (*(ops[i].op) == *(s + 0) && *(s +1) == '\0')
+	{
+		if (*(ops[i].op) == *(s + 0) && *(s + 1) == '\0')
 			return (ops[i].f);
 	i++;
+	}
+	printf("Error\n");
+	exit(99);
 	return (0);
 }
