@@ -1,3 +1,5 @@
+[![N|Solid](https://blog.holbertonschool.com/wp-content/uploads/2019/06/cherry72-942x1024.png)](http://holbertonschool.com)
+
 ## LINKED LISTS
 
 One disadvantage of using arrays to store data is that arrays are static structures and therefore cannot be easily extended or reduced to fit the data set. Arrays are also expensive to maintain new insertions and deletions. In this chapter we consider another data structure called Linked Lists that addresses some of the limitations of arrays.
