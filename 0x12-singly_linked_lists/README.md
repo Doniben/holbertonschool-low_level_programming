@@ -10,13 +10,20 @@ gcc 4.8.4 using the flags
 ```sh
 -Wall -Werror -Wextra and -pedantic
 ```
-##Written in
+## Written in
 
 **GNU Emacs 24.3.1**
 
-##Functions
+## Prototypes:
 
-##Functions
+size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str);
+void free_list(list_t *head);
+int _strlen(char *s);
+
+## Functions
 
 | Format | Usage |
 | ------ | ------ |
