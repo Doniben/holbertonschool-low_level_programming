@@ -1,9 +1,14 @@
-        .globl main
+section .programFlow
+	    global main
 main:
-	        pushl   $.LC0
-	        call    printf
-	        addl    $4, %esp
-	        xorl    %eax, %eax
-	        ret
-	.LC0:
-	        .string "Hello, Holberton"
+	        mov edx,len
+	        mov ecx,msg
+	        mov ebx,0x1    	;select STDOUT stream
+	        mov eax,0x4    	;select SYS_WRITE call
+	        int 0x80       	;invoke SYS_WRITE
+	        mov ebx,0x0    	;select EXIT_CODE_0
+	        mov eax,0x1    	;select SYS_EXIT call
+	        int 0x80       	;invoke SYS_EXIT
+	section .programData
+msg:			 db "Hello, Holberton",0xa
+len:			 equ $ - msg
