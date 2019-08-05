@@ -12,13 +12,13 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *nova;
 	listint_t *kopi = *head;
 
-	nova = malloc(sizeof(*head));
+	nova = malloc(sizeof(head));
 
-	if (nova != NULL)
-	{
-		nova->n = n;
-		nova->next = NULL;
-	}
+	if (!nova)
+		return (NULL);
+	nova->n = n;
+	nova->next = NULL;
+	
 	if (!*head)
 	{
 		*head = nova;
