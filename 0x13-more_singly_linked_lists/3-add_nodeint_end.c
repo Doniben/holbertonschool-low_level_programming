@@ -28,7 +28,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	while (kopi->next)
 	{
 		kopi = kopi->next;
-		kopi->next = nova;
 	}
+	kopi->next = nova;
 	return (nova);
 }
