@@ -2,7 +2,8 @@
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 /**
- * insert_nodeint_at_index - function that inserts a new node at a given position.
+ * insert_nodeint_at_index - function that inserts a new
+ * node at a given position.
  * @head: addres of the addres of the head
  * @idx: index
  * @n: elemento to add the node
@@ -22,7 +23,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 
 	nova->n = n;
-	
+
 	if (!*head)
 	{
 		nova->next = NULL;
