@@ -4,7 +4,7 @@
 
 One disadvantage of using arrays to store data is that arrays are static structures and therefore cannot be easily extended or reduced to fit the data set. Arrays are also expensive to maintain new insertions and deletions. In this chapter we consider another data structure called Linked Lists that addresses some of the limitations of arrays.
 
-##Compilation
+## Compilation
 
 gcc 4.8.4 using the flags 
 ```sh
