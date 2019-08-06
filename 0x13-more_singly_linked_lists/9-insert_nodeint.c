@@ -28,13 +28,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		nova->next = NULL;
 		*head = nova;
-		return (nova);
+		return (NULL);
 	}
 
 	kopi = *head;
 
 	if (idx == 0)
-		return (add_nodeint(head, n));
+		return (NULL);
 
 	while (kalkulilo < (idx - 1))
 	{
