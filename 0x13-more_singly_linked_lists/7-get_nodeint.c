@@ -17,7 +17,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		return (NULL);
 
 	x = 0;
-	while (index)
+	while (index != x)
 	{
 		kopio = kopio->next;
 		x++;
