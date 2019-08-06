@@ -14,6 +14,7 @@ int sum_listint(listint_t *head)
 
 	if (!kopi)
 		return (0);
+	aldoni = 0;
 	while (kopi)
 	{
 		aldoni += kopi->n;
