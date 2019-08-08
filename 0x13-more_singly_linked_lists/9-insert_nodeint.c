@@ -1,6 +1,7 @@
 #include "lists.h"
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 /**
  * insert_nodeint_at_index - function that inserts a new
  * node at a given position.
@@ -34,7 +35,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	kopi = *head;
 
 	if (idx == 0)
-		return (NULL);
+		return (add_nodeint(head, n));
 
 	while (kalkulilo < (idx - 1))
 	{
