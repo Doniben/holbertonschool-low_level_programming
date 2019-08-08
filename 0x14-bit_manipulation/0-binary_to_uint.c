@@ -16,9 +16,9 @@ unsigned int binary_to_uint(const char *b)
 	aldoni = 0;
 	while (*b)
 	{
-		if (*b == 1)
+		if (*b == '1')
 			aldoni = aldoni * 2;
-		else if (*b == 0)
+		else if (*b == '0')
 			aldoni = aldoni * 2;
 		else
 			return (0);
