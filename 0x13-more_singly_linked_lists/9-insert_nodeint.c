@@ -1,6 +1,5 @@
 #include "lists.h"
 listint_t *add_nodeint(listint_t **head, const int n);
-listint_t *add_nodeint_end(listint_t **head, const int n);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 /**
  * insert_nodeint_at_index - function that inserts a new
@@ -52,4 +51,34 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	nova->n = n;
 	nuna->next = nova;
 	return (nova);
+}
+/**
+ * *add_nodeint - Print the list of a single list
+ * @n: The variable of int type that receives
+ * @head: The pointer of the list
+ *
+ * Return: The number of elements in the list
+ */
+
+
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t *nova = malloc(sizeof(head));
+	listint_t *kopi = *head;
+
+	if (!nova)
+		return (NULL);
+	nova->n = n;
+	nova->next = NULL;
+	if (!*head)
+	{
+		*head = nova;
+		return (*head);
+	}
+	else
+	{
+		nova->next = kopi;
+		*head = nova;
+	}
+	return (*head);
 }
