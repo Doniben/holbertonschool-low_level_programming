@@ -9,11 +9,12 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int kalkulilo = 0;
-	unsigned int xor;
+	unsigned int kalkulilo;
+	unsigned long int xor;
 
 	xor = n ^ m;
 
+	kalkulilo = 0;
 	while (xor)
 	{
 		if ((xor & 1) == 1)
