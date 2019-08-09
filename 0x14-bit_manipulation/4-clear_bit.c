@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * clear_bit - sets the value of a bit to 0 at a given index. 
- * @n: value 
+ * clear_bit - sets the value of a bit to 0 at a given index.
+ * @n: value
  * @index: position of the bit to change
  * Return: -1 if error
  */
