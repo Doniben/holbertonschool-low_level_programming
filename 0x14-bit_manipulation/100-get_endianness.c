@@ -9,7 +9,7 @@ int get_endianness(void)
 {
 	unsigned int i = 1;
 	char *p = (char *) &i;
-	
+
 	if (p[0] == 1) /*"Little Endian*/
 	{
 		return (1);
