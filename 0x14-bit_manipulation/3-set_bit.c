@@ -9,13 +9,13 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int val;
+	unsigned long int val = 0;
 
 	if (n == NULL)
 		return (-1);
 	if (index > 63)
 		return (-1);
 	val = 1 << index;
-	*n = *n & val;
+	*n = *n & ~val;
 	return (1);
 }
