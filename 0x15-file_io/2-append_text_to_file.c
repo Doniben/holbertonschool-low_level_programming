@@ -2,8 +2,9 @@
 
 /**
  * function that appends text at the end of a file.
- *
- *
+ * @filename: file to append
+8 @text_content: content
+ * Return: 1 on success.
  */
 
 int append_text_to_file(const char *filename, char *text_content)
