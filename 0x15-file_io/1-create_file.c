@@ -7,7 +7,7 @@
  * Return: 1 on Success.
  */
 
-int create_file(const char *filename, char *text_content)
+int create_file(const char *filename, char * text_content)
 {
 	int fd;
 	char *buf = malloc(sizeof(char) * text_content);
@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (buf == NULL)
 		text_content = "";
-	write(fd, text_content, buf);
+	write(STDOUT_FILENO, buf, text_content);
 	close(fd);
 	return (1);
 }
