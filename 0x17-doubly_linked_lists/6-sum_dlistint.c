@@ -9,7 +9,7 @@ int sum_dlistint(dlistint_t *head)
 {
 
 	dlistint_t *Aux;
-	int add = 0;
+	int sum = 0;
 
 	if (!head)
 		return (0);
@@ -17,7 +17,7 @@ int sum_dlistint(dlistint_t *head)
 	while (Aux->next)
 	{
 		add += Aux->n;
-		copy = Aux->next;
+		Aux = Aux->next;
 	}
 	add += Aux->n;
 	return (add);
