@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index -  function that inserts a new node at a given position.
+ * delete_dnodeint_at_index -  function that inserts a  nodeat a position.
  * @head: l-list
  * @index: Index of the node
  * Return: 1
