@@ -1,4 +1,4 @@
-#include <hash_tables.h>
+#include "hash_tables.h"
 
 /**
 * hash_table_create - creates a new hash table.
@@ -8,7 +8,7 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t = *hash_n;
+	hash_table_t *hash_n;
 
 	if (!size)
 	{
@@ -16,7 +16,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 		if (!hash_n)
 			return (NULL);
 		hash_n->size = size;
-		hash_n->array;
+		hash_n->array = malloc(sizeof(hash_node_t *));
 		return (NULL);
 	}
+	return (NULL);
 }
