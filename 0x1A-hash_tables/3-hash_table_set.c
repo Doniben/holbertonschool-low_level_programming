@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * has_table_set - adds an element to the hash table
+ * hash_table_set - adds an element to the hash table
  * @ht: hashtable to add
  * @key: key
  * @value: size of the array
@@ -54,7 +54,7 @@ hash_node_t *create_node(char *key, char *value)
 
 	new_node = malloc(sizeof(hash_node_t));
 	if (!new_node)
-		return NULL;
+		return (NULL);
 	new_node->key = strdup(key);
 	if (!new_node->key)
 		return (NULL);
