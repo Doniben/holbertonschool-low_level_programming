@@ -8,7 +8,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht)
 	{
-		printf ("{");
+		printf("{");
 		for (index = 0; ht->size; index++)
 		{
 			if (ht->array != NULL)
