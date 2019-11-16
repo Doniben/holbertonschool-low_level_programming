@@ -1,7 +1,7 @@
 CC=gcc
 SRC=holberton.c main.c
 NAME=holberton
-OBJ=$(SRC:%.c)=$(SRC:%.o)
+OBJ=$(SRC:%.c=%.o)
 RM=rm -f
 
 all: $(OBJ)
@@ -11,6 +11,8 @@ clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ
+	$(RM) $(OBJ)
 
 fclean: clean oclean
+
+re: clean oclean
