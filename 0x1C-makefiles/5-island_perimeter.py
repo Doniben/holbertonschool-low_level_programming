@@ -21,7 +21,7 @@ def island_perimeter(grid):
                 else:
                     if grid[x][y - 1] == 0:
                         count += 1
-                if (x + 1) >= len(grid):
+                if (x + 1) >= len(grid) - 1:
                     count += 1
                 else:
                     if grid[x + 1][y] == 0:
